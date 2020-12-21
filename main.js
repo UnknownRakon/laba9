@@ -24,3 +24,20 @@ function newArray(array) {
    } 
 };
 newArray(array);
+
+// Задание 3
+console.log("Задание 3")
+
+let word = prompt('Введите слово для проверки')
+
+function isPalindrome(word) {
+    const length = word.length,
+        wordReverse = word.split('').reverse().join('');
+    if (wordReverse == word) {
+      console.log(word + ' - палиндром');
+    } else {
+        console.log(word + ' не палиндром');
+    }
+  };
+
+isPalindrome(word);
