@@ -41,3 +41,24 @@ function isPalindrome(word) {
   };
 
 isPalindrome(word);
+
+// Задание 4
+console.log("Задание 4");
+function scalarMultiplication(number,matrix) {
+    for (let i=0;i<matrix.length;i++) {
+        let array=[];
+        let str="";
+        for (let j=0;j<matrix[i].length;j++) {
+            matrix[i][j]=matrix[i][j]*number;
+            array.push(matrix[i][j])
+            if (String(matrix[i][j]).length == 1){
+                str+=matrix[i][j] + '  ';
+            }
+            else {
+                str+=matrix[i][j] + ' ';
+            }
+        }
+        console.log(str)
+    }
+}
+scalarMultiplication(3, [[1,2,3],[4,5,6],[7,8,9]])
